@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3275972732964780516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3275972732964780518}
+  - component: {fileID: 3275972732964780519}
+  m_Layer: 0
+  m_Name: BiomManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &3275972732964780518
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3275972732964780516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3275972732964780519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3275972732964780516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabcfee12dc0b314da381d0d8d141768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultBiom:
+    biomName: Grasslands
+    priority: 0
+    overwrite: 0
+    tileObjects: []
+    octaves:
+    - spawnChance: 0.1
+      scale: 5
+    notUseColor: 0
+    groundColor: {r: 0.43529412, g: 0.8117647, b: 0, a: 1}
+  bioms:
+  - biomName: Desert
+    priority: 200
+    overwrite: 0
+    tileObjects:
+    - tileObject: {fileID: 0}
+      chance: 100
+    - tileObject: {fileID: 2563488212163043219, guid: 7ad8914c2f7e4fa4b96c2f19c051e105,
+        type: 3}
+      chance: 2.5
+    - tileObject: {fileID: 2563488212163043219, guid: f51436be2e24cd849a1af6e823687d3e,
+        type: 3}
+      chance: 2.5
+    - tileObject: {fileID: 2563488212163043219, guid: 065609578a523e446bf1b4b9c0a43eff,
+        type: 3}
+      chance: 2.5
+    - tileObject: {fileID: 2563488212163043219, guid: 069bfcb325da9f94ab11b789e087b8ab,
+        type: 3}
+      chance: 2.5
+    octaves:
+    - spawnChance: 0.55
+      scale: 1.4
+    notUseColor: 0
+    groundColor: {r: 1, g: 0.7027648, b: 0, a: 1}
+  - biomName: Forest
+    priority: 100
+    overwrite: 0
+    tileObjects:
+    - tileObject: {fileID: 2563488212163043219, guid: 04d3402e5901cb248b4979838a344138,
+        type: 3}
+      chance: 50
+    - tileObject: {fileID: 2563488212163043219, guid: fb1cbc09bd80c0745881cd1302535420,
+        type: 3}
+      chance: 50
+    - tileObject: {fileID: 2563488212163043219, guid: 13ed216045c8b864bb24ee91cb9d336e,
+        type: 3}
+      chance: 50
+    - tileObject: {fileID: 2563488212163043219, guid: 7a1d4289e5928d546a7c93138ab6434c,
+        type: 3}
+      chance: 50
+    - tileObject: {fileID: 2563488212163043219, guid: 9c7a6f074878bd14ea855c171dbfddd9,
+        type: 3}
+      chance: 75
+    - tileObject: {fileID: 2563488212163043219, guid: e83192921dfb8f343b18c11aed25ba82,
+        type: 3}
+      chance: 75
+    - tileObject: {fileID: 2563488212163043219, guid: 7d1227e4cbbda1d48abf11fabe7c734f,
+        type: 3}
+      chance: 75
+    - tileObject: {fileID: 2563488212163043219, guid: 0c07069e02469464888f0367c7546c39,
+        type: 3}
+      chance: 75
+    - tileObject: {fileID: 2563488212163043219, guid: a8d2fe3f751daad4bb2b2bc0b2e62b4f,
+        type: 3}
+      chance: 75
+    - tileObject: {fileID: 2563488212163043219, guid: 20e4f5156dcb49b4495335a18e3c1c44,
+        type: 3}
+      chance: 75
+    - tileObject: {fileID: 2563488212163043219, guid: 9d43d4860f0eb7d49904d5a12e20f329,
+        type: 3}
+      chance: 100
+    - tileObject: {fileID: 2563488212163043219, guid: 0293f5b08df3d2b4d8d702c6487abcbe,
+        type: 3}
+      chance: 100
+    - tileObject: {fileID: 2563488212163043219, guid: 102faa22cfec6854f808f062842619ae,
+        type: 3}
+      chance: 100
+    - tileObject: {fileID: 2563488212163043219, guid: 0b790b597b6b5a6449fe67f71dde5ea5,
+        type: 3}
+      chance: 100
+    - tileObject: {fileID: 2563488212163043219, guid: dcd109f9998f7bd45b0ccb22689fc788,
+        type: 3}
+      chance: 200
+    octaves:
+    - spawnChance: 0.45
+      scale: 5
+    - spawnChance: 0.5
+      scale: 20
+    notUseColor: 0
+    groundColor: {r: 0, g: 0.5188679, b: 0.12794115, a: 1}
+  - biomName: Stone
+    priority: 50
+    overwrite: 1
+    tileObjects:
+    - tileObject: {fileID: 2563488212163043219, guid: 6f3f6f37a2c7577468fb3d3d6e2c9ee1,
+        type: 3}
+      chance: 80
+    - tileObject: {fileID: 2563488212163043219, guid: cfae97aa35fa4a04d8a63ac68c7f851a,
+        type: 3}
+      chance: 20
+    octaves:
+    - spawnChance: 0.8
+      scale: 20
+    notUseColor: 1
+    groundColor: {r: 0.59607846, g: 0.59607846, b: 0.59607846, a: 1}
